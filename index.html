@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ideas y comparativas de productos prácticos para el hogar.">
+  <title>CasaPráctica | Ideas útiles para tu hogar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="CasaPráctica inicio"><span class="brand-mark">⌂</span> CasaPráctica</a>
+    <nav><a href="#productos">Productos</a><a href="#sobre">Cómo funciona</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">MENOS COMPLICACIONES, MÁS HOGAR</p>
+      <h1>Encuentra ideas prácticas para tu casa.</h1>
+      <p class="hero-copy">Una selección de productos útiles para organizar, iluminar y aprovechar mejor tus espacios.</p>
+      <a class="button primary" href="#productos">Explorar selección</a>
+      <div class="hero-note">Catálogo de demostración: los ejemplos no son ofertas verificadas.</div>
+    </section>
+
+    <section class="catalog" id="productos">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECCIÓN INICIAL</p><h2>Ideas para el hogar</h2></div>
+        <label class="search-wrap"><span class="sr-only">Buscar productos</span><input id="search" type="search" placeholder="Buscar productos..." autocomplete="off"></label>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar por categoría">
+        <button class="filter active" data-category="Todos">Todos</button>
+        <button class="filter" data-category="Organización">Organización</button>
+        <button class="filter" data-category="Iluminación">Iluminación</button>
+        <button class="filter" data-category="Cocina">Cocina</button>
+      </div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <p id="empty-state" class="empty-state" hidden>No hay productos que coincidan con tu búsqueda.</p>
+    </section>
+
+    <section class="disclosure" id="sobre">
+      <div class="disclosure-icon">ⓘ</div>
+      <div>
+        <h2>Transparencia ante todo</h2>
+        <p>Esta web puede incluir enlaces de afiliado. Si compras a través de uno de ellos, el sitio podría recibir una comisión sin coste adicional para ti. Los productos mostrados ahora son ejemplos de demostración: comprueba siempre precio, disponibilidad y condiciones en la tienda.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> CasaPráctica</span><span>Recomendaciones útiles para el hogar</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
